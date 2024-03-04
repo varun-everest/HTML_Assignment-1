@@ -1,103 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everest Engineering</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        header {
-            text-align: center;
-            background-color: paleturquoise;
-            padding: 10px;
-        }
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: rgb(198, 238, 117);
-            padding: 10px;
-        }
-        div {
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            background-color: lightgoldenrodyellow;
-            padding: 10px;
-            width: 100%;
-        }
-        .mainheading{
-            color : gold;
-            font-style: oblique;
-            font-weight: bolder;
-            text-decoration: underline;
-        }
-        .image{
-            height : 200px;
-            width : 400px;
-        }
-        .submit_button{
-            background-color: greenyellow;
-            color : black;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1 class = "mainheading">WELCOME TO EVEREST ENGINEERING</h1>
-    </header>
-
-    <nav>
-        <a href="https://everest.engineering">Home</a>
-        <a href="https://medium.com/everestengineering">Know More</a>
-        <a href="https://everest.engineering/pages/privacy-policy.html">FAQ</a>
-        <a href="https://everest.engineering/contact.html">Contact us</a>
-    </nav>
-
-    <div>
-        <h2 id="home">Home</h2>
-        <p >Welcome to  family of everest. </p>
-        
-        <img class="image" src="img.jpeg" alt="Bengalure office">
-    </div>
-
-    <div>
-        <h2 id="about">About</h2>
-        <p>This division consists FrontEnd technologies</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </div>
-
-    <div>
-        <h2 id="contact">Contact</h2>
-        <p>Contact us through the following form:</p>
-        <div>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="mobile">Mobile:</label>
-                <input type="tel" id="mobile" name="mobile" required>
-                <br>
-                <input class="submit_button" type="submit" value="Submit">
-            </form>
+<html>
+    <head>
+        <title>
+            Welcome to store
+        </title>
+        <link rel="icon" href="./images/logo.png" type="image/png">
+        <link rel ="stylesheet" href="style.css" type = "text/css">
+    </head>
+    <body>
+        <nav>
+            <button onclick="changeStyle(this.id)" id ="b1">Home</button>
+            <button onclick="changeStyle(this.id)" id="b2">About</button>
+            <button onclick="changeStyle(this.id)" id="b3">Services</button>
+            <button onclick="changeStyle(this.id)" id="b4">Contact us</button>
+            
+        </nav>
+        <div id="content">
+            <h1>Welcome Everyone!!!</h1>
+            <img class = "imglogo" src="./Images/logo.png">
         </div>
-    </div>
+        <footer>
+            Copyright © 2024 V - Store. All Rights Reserved.
+        </footer>
+        <script type="text/JavaScript" src = "script.js"></script>
     </body>
-
-    <footer>
-        <p>&copy; All rights reserved</p>
-    </footer>
-
-</body>
 </html>
